@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--beginning of navbar-->
+<body class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="playlist.html">Music Playlist</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link active" href="playlist.html">Blues<span class="sr-only">(current)</span></a>
+                </div>
+              </div>
+            </nav>
+ <!--End of navbar-->           
+    <br>
+ <!--beginning of form-->  
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-artist">Artist</label>
+                        <input type="text" class="form-control" id="new-artist">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-song">Song</label>
+                        <input type="text" class="form-control" id="new-song">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-album">Album</label>
+                        <input type="text" class="form-control" id="new-album">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Create</button>
+            </div>
+        </div>
+    </div>
+<!--End of form-->     
+    <br>
+<!--beginning of table-->      
+    <table id="list" class="table table-striped">
+      <thead class="thead-dark">
+          <tr>
+              <th>Artist</th>
+              <th>Song</th>
+              <th>Album</th>
+              <th>Actions</th>
+          </tr>
+       </thead>
+    </table>
+<!--End of form-->  
+
+    <script src="playlist.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>
